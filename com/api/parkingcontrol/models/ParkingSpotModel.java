@@ -20,7 +20,6 @@ import java.util.UUID;
 @Table(name = "TB_PARKING_SPOT")
 public class ParkingSpotModel implements Serializable {
     @Id
-    //id sera gerado automaticamente
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     @Column(nullable = false, unique = true, length = 10)
